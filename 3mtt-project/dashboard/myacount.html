@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develop Skill</title>
+    <link rel="stylesheet" href="../asset/mystyle/style.css">
+    <link rel="stylesheet" href="../asset/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <section id="sidebarandheader">
+        <div class="main">
+            <div class="header-sidebar">
+                <!-- start header here  -->
+                <header id="header">
+                    <div class="header-flex">
+                        <div class="header-left">
+                            <h4>Online Learning</h4>
+                        </div>
+                        <div class="header-right">
+                            <h4>FreeBooks</h4>
+                            <p>Complete pdf in ever part of learning.</p>
+                        </div>
+                    </div>
+                </header>
+                <!-- mobile header phone -->
+                <div class="header-mobile">
+                    <div class="header-with">
+                        <div class="mobile-menu" id="openmobilebar">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="mobile-menu" id="closemobilebar">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <p>Online Learning</p>
+                        <div class="mobile-menu">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile header phone -->
+                <!-- end header here  -->
+                <!-- start side navigation here  -->
+                <div class="navbar">
+                    <div class="nav-right">
+                        <div class="nav-top">
+                            <div class="nav-brand">
+                                <img src="../asset/photos/House-logo-on-transparent-background-PNG-removebg-preview.png" alt="">
+                            </div>
+                            <div class="nav-open" id="closesidebar">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="nav-open" id="opensidebar">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav">
+                        <li>
+                            <a href="../dashboard/">
+                                <div class="link-hover">
+                                    <i class="fa fa-home"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="school_books.html">
+                                <div class="link-hover">
+                                    <i class="fa fa-user-graduate"></i>
+                                    <span>School Libry</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="programing.html">
+                                <div class="link-hover">
+                                    <i class="fa fa-code"></i>
+                                    <span>Programming</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="myacount.html">
+                                <div class="link-hover">
+                                    <i class="fa fa-user-circle"></i>
+                                    <span>My profile</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <div class="link-hover">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <!-- end side navigation here  -->
+            </div>
+        </div>
+    </section>
+
+    <section id="mainbody">
+        <div class="main-body">
+            <div class="schoolbook" style="padding-bottom: 30px;">
+                <div class="account-header">
+                    <div class="account-left">
+                        <h4>My Profile</h4>
+                        <p>For programmers in all level of studies in the world .</p>
+                    </div>
+                    <div class="account-right">
+                        <button type="button" onclick="modalParam(1)">Add new book</button>
+                    </div>
+                </div>
+                <div class="horizontal-line">
+                    <!-- <-- horizantal line -- -->
+                </div>
+
+                <div class="account">
+                    <div class="grid-2">
+                        <div class="col-md-6">
+                            <form action="" method="post">
+                                <div class="form-header">
+                                    <h4>Edit profile</h4>
+                                </div>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label for="">Fullname</label>
+                                        <input type="text" placeholder="fullname" value="Abubakar Mrcode"
+                                            class="input-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email</label>
+                                        <input type="text" placeholder="email address" value="mrcode@gmail.com"
+                                            class="input-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <button>Save</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="" method="post">
+                                <div class="form-header">
+                                    <h4>Change Password</h4>
+                                </div>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label for="">Old Password</label>
+                                        <input type="password" placeholder="Old password" class="input-control">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">New Password</label>
+                                                <input type="password" placeholder="New password" class="input-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="">Comfirm Password</label>
+                                                <input type="password" placeholder="Re-type password"
+                                                    class="input-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button>Change password</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container">
+                    <div class="col-md-halp">
+                        <div class="books-header">
+                            <div class="books-logo">
+                                <h4 class="fa fa-brands fa-html5"></h4>
+                            </div>
+                        </div>
+                        <div class="books-body">
+                            <h4>Html</h4>
+                            <p>This book writed by mr abubakar in 2000.</p>
+                        </div>
+                        <div class="books-footer">
+                            <a href="#!">
+                                <div class="btn-success">
+                                    Read Book
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-halp">
+                        <div class="books-header">
+                            <div class="books-logo">
+                                <h4 class="fa fa-brands fa-css3"></h4>
+                            </div>
+                        </div>
+                        <div class="books-body">
+                            <h4>CSS</h4>
+                            <p>This book writed by mr abubakar in 2014.</p>
+                        </div>
+                        <div class="books-footer">
+                            <a href="#!">
+                                <div class="btn-success">
+                                    Read Book
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-halp">
+                        <div class="books-header">
+                            <div class="books-logo">
+                                <h4 class="fa fa-brands fa-laravel"></h4>
+                            </div>
+                        </div>
+                        <div class="books-body">
+                            <h4>Laravel</h4>
+                            <p>This book writed by mr abubakar in 2014.</p>
+                        </div>
+                        <div class="books-footer">
+                            <a href="#!">
+                                <div class="btn-success">
+                                    Read Book
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-halp">
+                        <div class="books-header">
+                            <div class="books-logo">
+                                <h4 class="fa fa-brands fa-php"></h4>
+                            </div>
+                        </div>
+                        <div class="books-body">
+                            <h4>PHP</h4>
+                            <p>This book writed by mr abubakar in 2014.</p>
+                        </div>
+                        <div class="books-footer">
+                            <a href="#!">
+                                <div class="btn-success">
+                                    Read Book
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-halp">
+                        <div class="books-header">
+                            <div class="books-logo">
+                                <h4 class="fa fa-brands fa-js"></h4>
+                            </div>
+                        </div>
+                        <div class="books-body">
+                            <h4>JavaScript</h4>
+                            <p>This book writed by mr abubakar in 2014.</p>
+                        </div>
+                        <div class="books-footer">
+                            <a href="#!">
+                                <div class="btn-success">
+                                    Read Book
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal modal-opacity-light modal-hide" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header">
+                    <h4>Add New Book</h4>
+                    <p class="mt-4">You can add your book to store or help other learners</p>
+                </div>
+                <form action="" class="form-control">
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group mr-5">
+                                <label for="">Book name</label>
+                                <input type="text" placeholder=" " class="input-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Book File</label>
+                                <input type="file" placeholder=" " class="input-control input-control-file">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <textarea name="" class="input-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <button>Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-dismiss shadow-lg" onclick="modalDismissParams(1)">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <article id="alert">
+        <div class="alert-toose">
+            hhhh
+        </div>
+    </article>
+
+    <script src="../asset/myjs/javaSctipt.js"></script>
+    <script src="../asset/myjs/modal.js"></script>
+</body>
+
+</html>

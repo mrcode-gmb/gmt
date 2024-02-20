@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --main-bg: rgb(12, 158, 184);
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.col-2 {
+    width: 100%;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex-50{
+    flex-basis: 50%;
+}
+
+.form-averter {
+    width: 100%;
+    height: 100vh;
+    background: var(--main-bg);
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 0px 7px 0 var(--main-bg);
+}
+
+.form-averter .avater {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.form-averter .avater img {
+    width: 22rem;
+}
+
+.form-data {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    margin: auto;
+}
+
+.form-data .form-label {
+    width: 70%;
+    margin: auto;
+    padding: 22px;
+    box-shadow: 1px 1px 1rem 0 #efefef;
+    border-radius: 10px;
+    background: white;
+}
+
+.form-header {
+    width: 100%;
+    margin: 16px 0;
+
+}
+
+.form-header h4 {
+    font-size: 20px;
+    color: #666;
+}
+
+.form-header p {
+    font-size: 15px;
+    color: #333;
+    margin-top: 2px;
+}
+
+.form-body {
+    width: 100%;
+}
+
+.form-body .form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.form-body .form-group input {
+    width: 100%;
+    padding: 13px;
+    outline: none;
+    border-radius: 4px;
+    border: solid 1px #ddd;
+}
+
+.form-body .form-group label {
+    position: absolute;
+    font-size: 14px;
+    color: #777;
+    padding: 0 5px;
+    left: 10px;
+    top: 28%;
+    transition: 0.3s;
+    /* to make a text not pointed  */
+	pointer-events: none;
+}
+
+.form-body .form-group input:focus+label {
+    top: -20%;
+    background: white;
+}
+
+/* if placeholder not empty label is up  */
+.form-body .form-group input:not(:placeholder-shown)+label {
+    top: -20%;
+    background: white;
+}
+
+
+
+.mb-5 {
+
+    margin-bottom: 10px !important;
+}
+
+.form-body .form-group a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--main-bg);
+}
+
+.form-body .form-group button {
+    width: 100%;
+    padding: 9px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    background: var(--main-bg);
+    border-radius: 4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-body .form-group p {
+    color: #333;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.row-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.col-3 {
+    color: #777;
+    font-size: 15px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+
+}
+
+.col-3 .line {
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.col-icon {
+    margin-top: 6px;
+}
+
+.col-icon i {
+    font-size: 20px;
+}
+
+.text-facebook {
+    color: rgb(75, 75, 235);
+}
+
+.text-twitter {
+    color: var(--main-bg);
+}
+
+.text-github {
+    color: #555;
+}
+
+.text-google {
+    color: rgb(236, 93, 93);
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .col-2 {
+        width: 100%;
+    }
+
+    .form-row {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .form-averter {
+        width: 100%;
+        height: 40vh;
+        background: var(--main-bg);
+        border-bottom-right-radius: 100%;
+        box-shadow: 0px 0px 7px 0 var(--main-bg);
+    }
+
+    .form-averter .avater {
+        margin-left: 60px;
+        margin-top: 3px;
+    }
+
+    .form-averter .avater img {
+        width: 11rem;
+    }
+
+    .form-data .form-label {
+        width: 90%;
+        box-shadow: 1px 1px 1.4rem 0 #efefef;
+    }
+
+    .col-3 .line {
+        width: 120px;
+    }
+
+}
