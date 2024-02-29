@@ -134,7 +134,7 @@ function spawnEnamies () {
     }
     enemies.push(new Enemy(x, y, radius, color, velocity))
 
-    console.log(enemies)
+
   }, 1000)
 }
 
