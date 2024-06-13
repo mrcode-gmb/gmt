@@ -1,0 +1,25 @@
+
+:root{
+    --back-green: rgb(97, 184, 97);
+    --back-hover: rgb(151, 201, 151);
+    --back-darkgreen: rgb(20, 71, 20);
+    --back-white: white;
+    --back-light: #efefef;
+
+} 
+
+
+article#alert{
+    width: auto;
+    display: none;
+}
+
+.alert-toose{
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    width: 380px;
+    height: 100px;
+    background: rgb(151, 201, 151);
+    border-radius: 10px;
+}
