@@ -1,0 +1,235 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Autoprefixer CSS online</title>
+    <meta
+      name="description"
+      content="Autoprefixer is a PostCSS plugin which parses your CSS and adds vendor prefixes"
+    />
+    <meta name="yandex-verification" content="1b1aa55a494642c2" />
+    <link rel="canonical" href="https://autoprefixer.github.io/zh-cn/" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://autoprefixer.github.io/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://autoprefixer.github.io/ru/"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://autoprefixer.github.io/fr/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://autoprefixer.github.io/pt-br/"
+    />
+    <meta property="og:image" content="/assets/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/icon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/icon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/assets/icon/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/assets/icon/safari-pinned-tab.svg"
+      color="#e23439"
+    />
+    <link rel="shortcut icon" href="/assets/icon/favicon.ico" />
+    <meta
+      name="msapplication-config"
+      content="/assets/icon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script type="module" crossorigin src="/assets/main.aa33f1f2.js"></script>
+    <link rel="stylesheet" href="/assets/main.c8fee0f8.css">
+  </head>
+  <body>
+    <script src="https://ymatuhin.ru/ads/ads.js" defer></script>
+    <div class="ads" data-ads></div>
+
+    <div class="logo_and_title">
+      <img src="/assets/logo.png" width="80" alt="" />
+      <div>
+        <h1>Autoprefixer CSS 在线</h1>
+        <p>
+          Autoprefixer 是一个解析 CSS 并添加浏览器供应商前缀的 PostCSS 插件。
+        </p>
+      </div>
+    </div>
+
+    <div class="textarea-box">
+      <p class="js-version version"></p>
+
+      <textarea autofocus class="textarea textarea-left js-input"></textarea>
+
+      <pre
+        class="textarea textarea-right"
+        contenteditable=""
+      ><code class="language-css js-output"><strong>加载中...</strong></code></pre>
+    </div>
+
+    <div class="settings">
+      <div class="settings__left">
+        <form action="" class="filter js-filter">
+          <label class="filter__text">浏览器列表</label>
+
+          <input
+            type="text"
+            class="filter__input js-browsers-filter"
+            placeholder="> 1%, last 2 versions"
+          />
+          <input type="submit" class="filter__apply button" value="确定" />
+        </form>
+
+        <label class="settings__version">
+          <input type="checkbox" class="js-comment" name="" checked />
+          <span> 在结果中包含带有配置的注释 </span>
+        </label>
+      </div>
+      <div class="settings__right">
+        <button class="button js-select" type="button">选中结果</button>
+      </div>
+    </div>
+
+    <p>
+      你还可以通过浏览器中列表输入框中文字在&nbsp;
+      <a class="js-link-browserlist" href="https://browsersl.ist/"
+        >browsersl.ist</a
+      >&nbsp;查询你的浏览器列表
+    </p>
+
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js" async="async"></script>
+    <div
+      class="ya-share2"
+      data-services="vkontakte,facebook,gplus,twitter,evernote,pocket,telegram"
+      data-lang="{{ page.lang }}"
+      data-counter=""
+    ></div>
+
+    <br /><br />
+    <div class="ads" data-ads></div>
+
+    <h2>Autoprefixer 是什么</h2>
+    <p>
+      Autoprefixer 在线 - 原生 Autoprefixer 在线 REPL。 它解析您的 CSS 并使用
+      <a href="https://caniuse.com/">Can I Use</a> 中的值
+      将浏览器供应商前缀添加到 CSS 规则中。它由谷歌<a
+        href="https://developers.google.com/web/tools/setup/setup-buildtools#dont_trip_up_with_vendor_prefixes"
+        >推荐</a
+      >，并在 Twitter 和淘宝使用。
+    </p>
+
+    <h3>它是如何工作的</h3>
+    <p>
+      Autoprefixer
+      使用有关浏览器受欢迎程度的数据及浏览器对供应商前缀支持的数据。
+      根据这些信息来增加或删除前缀。 它也可以帮助您获得 animations, transition,
+      transform, grid, flex, flexbox等规则的前缀。
+    </p>
+
+    <h3>浏览器过滤</h3>
+    <p>
+      您可以配置在转换中为哪些浏览器生成前缀。有关语法的更多详细信息详见<a
+        href="https://github.com/postcss/autoprefixer#browsers"
+        >文档</a
+      >。<a href="https://github.com/postcss/autoprefixer#faq">常见问题解答</a
+      >在文中已列出。
+    </p>
+
+    <h3>选项</h3>
+    <p>
+      IE 浏览器的 Grid 布局 polyfill 已启用，在 autoprefixer 中的<a
+        href="https://github.com/postcss/autoprefixer#does-autoprefixer-polyfill-grid-layout-for-ie"
+        >默认</a
+      >不是这个。
+    </p>
+
+    <h4>非常感谢</h4>
+    <p>
+      致 <a href="https://github.com/ai">Andrey Sitnik</a>，
+      <a href="https://github.com/postcss/postcss">PostCSS</a>,
+      <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>,
+      <a href="https://github.com/ai/browserslist">browserslist</a>
+      以及一些非常棒工具的作者。
+    </p>
+
+    <a
+      href="https://github.com/autoprefixer/autoprefixer.github.io"
+      class="github-corner"
+      aria-label="在 Github 查看源码"
+      ><svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
+          fill: #dd3735;
+          color: #fff;
+          position: absolute;
+          top: 0;
+          border: 0;
+          right: 0;
+        "
+        aria-hidden="true"
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path></svg
+    ></a>
+
+    <section>
+      <small>
+        Autoprefixer online，又称： prefixer、 prefix generator、 cross browser
+        css generator、vendor prefixes generator。
+        <br />
+        2017 © <a href="/">Autoprefixer 在线</a> by
+        <a href="https://ymatuhin.ru/">ymatuhin</a>
+        &nbsp; / &nbsp;
+        <a href="/">In English</a>
+        &nbsp; / &nbsp;
+        <a href="/ru/">По-русски</a>
+        &nbsp; / &nbsp;
+        <a href="/fr/">En Français</a>
+        &nbsp; / &nbsp;
+        <a href="/pt-br/">Em Português</a>
+      </small>
+    </section>
+
+    <img
+      src="https://mc.yandex.ru/watch/26786013"
+      style="position: absolute; left: -9999px"
+      alt=""
+    />
+
+    
+  </body>
+</html>

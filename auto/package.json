@@ -1,0 +1,27 @@
+{
+  "name": "autoprefixer_online",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "repository": "git@github.com:autoprefixer/autoprefixer.github.io.git",
+  "author": "ymatuhin <ym@ymatuhin.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build",
+    "build": "rm -rf ./docs/** && vite build",
+    "dev": "vite",
+    "preview": "http-server ./docs"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.53.0",
+    "vite": "^2.9.13"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "modern-normalize": "^1.1.0",
+    "postcss": "^8.4.14",
+    "prismjs": "^1.28.0",
+    "store": "^2.0.12"
+  }
+}
